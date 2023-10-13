@@ -4,17 +4,16 @@ import java.time.LocalDate;
 import java.util.ArrayList;
 
 public class Aluno extends Pessoa {
-	private ArrayList<Curso> cursos;
+	private Curso[] cursos;
 	public Aluno(String nome, LocalDate dataNascimento) {
 		super(nome, dataNascimento);
 	}
-	public ArrayList<Curso> getCursos() {
+	public Curso[] getCursos() {
 		return cursos;
 	}
-	public void setCursos(ArrayList<Curso> cursos) {
+	public void setCursos(Curso[] cursos) {
 		this.cursos = cursos;
 	}
-	
 	@Override
 	public String toString() {
 		StringBuilder builder = new StringBuilder();
@@ -25,5 +24,6 @@ public class Aluno extends Pessoa {
 		builder.append("]");
 		return builder.toString();
 	}
+	
 	
 }

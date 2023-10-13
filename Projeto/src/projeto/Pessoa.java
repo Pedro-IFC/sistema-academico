@@ -11,8 +11,6 @@ public class Pessoa {
 		this.nome = nome;
 		this.dataNascimento = dataNascimento;
 	}
-	
-	
 
 	@Override
 	public String toString() {
@@ -24,9 +22,7 @@ public class Pessoa {
 		builder.append("]");
 		return builder.toString();
 	}
-
-
-
+	
 	public String getNome() {
 		return nome;
 	}

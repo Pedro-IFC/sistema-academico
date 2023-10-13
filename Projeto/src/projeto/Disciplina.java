@@ -5,7 +5,7 @@ import java.util.Arrays;
 
 public class Disciplina {
 	private int cod;
-	private ArrayList<Aluno> alunos;
+	private Aluno[] alunos;
 	private Professor[] professores = new Professor[4];
 	private String nome;
 	private boolean status;
@@ -29,10 +29,10 @@ public class Disciplina {
 	public void setCod(int cod) {
 		this.cod = cod;
 	}
-	public ArrayList<Aluno> getAlunos() {
+	public Aluno[] getAlunos() {
 		return alunos;
 	}
-	public void setAlunos(ArrayList<Aluno> alunos) {
+	public void setAlunos(Aluno[] alunos) {
 		this.alunos = alunos;
 	}
 	

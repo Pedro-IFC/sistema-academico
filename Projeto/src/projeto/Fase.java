@@ -4,41 +4,34 @@ import java.util.ArrayList;
 
 public class Fase {
 
-	private ArrayList<Disciplina> disciplina;
+	private Disciplina[] disciplina;
 	private boolean status;
-	private ArrayList<Disciplina> retorno;
-	                       
+	private int cod;
+	
 	
 	public boolean isStatus() {
 		return status;
+	}
+
+	public int getCod() {
+		return cod;
+	}
+
+	public void setCod(int cod) {
+		this.cod = cod;
 	}
 
 	public void setStatus(boolean status) {
 		this.status = status;
 	}
 
-	public ArrayList<Disciplina> getDisciplina() {
+	public Disciplina[]getDisciplina() {
 		return disciplina;
 	}
 
-	public void setDisciplina(ArrayList<Disciplina> disciplina) {
+	public void setDisciplina(Disciplina[] disciplina) {
 		this.disciplina = disciplina;
 	}
-
-	public void addDisciplina(Disciplina disciplina) {
-		this.getDisciplina().add(disciplina);
-	}
-	
-	public ArrayList<Disciplina> listarPorStatus(boolean status) {
-		retorno = null;
-	    for (int i =0; i< this.disciplina.size(); i++) {
-	      if(this.getDisciplina().get(i).isStatus()==status) {
-	    	  retorno.add(this.getDisciplina().get(i));
-	      }
-	    }
-	    return retorno;
-	}
-
 	@Override
 	public String toString() {
 		StringBuilder builder = new StringBuilder();
